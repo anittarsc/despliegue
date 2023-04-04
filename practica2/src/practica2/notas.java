@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class notas {
 	//declaramos la variables que nos hacen falta
-	//cambios en las variables
+	
 	double notasUF1, notasUF2, notasUF3;
-	double acu1, acu2, acu3, def;
+	double acu1, acu2, acu3, notaDef;
 	//utilizames ecaner para poder introducir datos
 	Scanner entrada = new Scanner(System.in);
 	
@@ -67,7 +67,7 @@ public class notas {
 		acu2 = notasUF2 * 0.35;
 		acu3 = notasUF3 * 0.30;
 		
-		def = acu1 + acu2+ acu3;
+		notaDef = acu1 + acu2+ acu3;
 		
 		//hasta aqui la tenemos calculada peor no la mostramos
 	}
@@ -82,16 +82,16 @@ public class notas {
 		System.out.println(" acumuado 2 = "+ acu2);
 		System.out.println(" acumuado 3 = "+ acu3);
 		
-		System.out.println(" nota definitiva es = "+ def);
+		System.out.println(" nota definitiva es = "+ notaDef);
 		
 	}
 
 	public void aprobado() {
 			
-			if(def<5 && def>=0) {
+			if(notaDef<5 && notaDef>=0) {
 				System.out.println("suspendio");
 			}else {
-				if (def>=5 && def<=10 ) {
+				if (notaDef>=5 && notaDef<=10 ) {
 				System.out.println("aprobado");
 				}else {
 					System.out.println(" error en la notas");
