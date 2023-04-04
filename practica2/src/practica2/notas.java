@@ -1,6 +1,6 @@
 package practica2;
 import java.util.Scanner;
-//github
+
 
 public class notas {
 	//declaramos la variables que nos hacen falta
@@ -20,8 +20,6 @@ public class notas {
 		
 		notasUF1= entrada.nextDouble();
 
-		
-		
 		System.out.print("ingrese nota 2: ");
 		
 		notasUF2= entrada.nextDouble();
